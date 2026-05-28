@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduGram - Privacy & Security Settings</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="settings privandsec.css">
+</head>
+<body>
+
+  <div class="dashboard-wrapper">
+    
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <div class="brand-header">
+          <div class="logo-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+            </svg>
+          </div>
+          <span class="brand-name">EduGram</span>
+        </div>
+
+        <nav class="navigation">
+          <a href="#" class="nav-item">
+            <span class="nav-icon">📊</span> Dashboard
+          </a>
+          <a href="#" class="nav-item">
+            <span class="nav-icon">✍️</span> Writing Assistant
+          </a>
+          <a href="#" class="nav-item">
+            <span class="nav-icon">📄</span> My Documents
+          </a>
+          <a href="#" class="nav-item">
+            <span class="nav-icon">📅</span> Assignments
+          </a>
+          <a href="#" class="nav-item active">
+            <span class="nav-icon">⚙️</span> Settings
+          </a>
+        </nav>
+      </div>
+
+      <div class="sidebar-footer">
+        <div class="user-avatar">U</div>
+        <div class="user-info">
+          <span class="user-name">User</span>
+          <span class="user-email">aj@gmail.com</span>
+          <span class="badge-student">student</span>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      
+      <header class="content-header">
+        <h1>Settings</h1>
+        <p>Manage your account and preferences</p>
+      </header>
+
+      <div class="settings-grid">
+        
+        <nav class="settings-sub-nav">
+          <a href="#" class="sub-nav-item">
+            <span class="sub-icon">👤</span> Account
+          </a>
+          <a href="#" class="sub-nav-item">
+            <span class="sub-icon">🎨</span> Appearance
+          </a>
+          <a href="#" class="sub-nav-item">
+            <span class="sub-icon">🔔</span> Notifications
+          </a>
+          <a href="#" class="sub-nav-item active">
+            <span class="sub-icon">🛡️</span> Privacy & Security
+          </a>
+          <a href="#" class="sub-nav-item">
+            <span class="sub-icon">❓</span> Help & Support
+          </a>
+        </nav>
+
+        <section class="settings-form-panel">
+          <h2>Privacy & Security</h2>
+
+          <div class="security-stack">
+
+            <div class="security-option-card">
+              <div class="option-text-details">
+                <h3>Two-Factor Authentication</h3>
+                <p>Add an extra layer of security to your account</p>
+              </div>
+              <button type="button" class="btn-primary-action">Enable 2FA</button>
+            </div>
+
+            <div class="security-option-card">
+              <div class="option-text-details">
+                <h3>Data Privacy</h3>
+                <p>Control how your data is used</p>
+              </div>
+              <button type="button" class="btn-secondary-action">View Privacy Settings</button>
+            </div>
+
+            <div class="security-option-card">
+              <div class="option-text-details">
+                <h3>Active Sessions</h3>
+                <p>Manage devices logged into your account</p>
+              </div>
+              <button type="button" class="btn-danger-outline-action">Logout from All Devices</button>
+            </div>
+
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+  </div>
+
+</body>
+</html>

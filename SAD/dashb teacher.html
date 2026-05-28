@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduGram Teacher Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="dashb teacher.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div>
+            <div class="logo-area">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+                <span class="logo-text">EduGram</span>
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="nav-item active" data-target="dashboard">
+                    <a href="#"><i class="fa-solid fa-table-columns"></i> Dashboard</a>
+                </li>
+                <li class="nav-item" data-target="writing-assistant">
+                    <a href="#"><i class="fa-solid fa-pen-nib"></i> Writing Assistant</a>
+                </li>
+                <li class="nav-item" data-target="documents">
+                    <a href="#"><i class="fa-regular fa-file-lines"></i> My Documents</a>
+                </li>
+                <li class="nav-item" data-target="assignments">
+                    <a href="#"><i class="fa-regular fa-clipboard"></i> Assignments</a>
+                </li>
+                <li class="nav-item" data-target="settings">
+                    <a href="#"><i class="fa-solid fa-gear"></i> Settings</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="sidebar-footer">
+            <div class="user-profile">
+                <div class="avatar">U</div>
+                <div class="user-info">
+                    <span class="user-name">User</span>
+                    <span class="user-email">aj@gmail.com</span>
+                    <span class="role-badge">teacher</span>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <section class="header-section">
+            <h1>Welcome back, User!</h1>
+            <p>Here's what's happening with your writing today.</p>
+        </section>
+
+        <section class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fa-regular fa-file-lines"></i></div>
+                <div>
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">Total Documents</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <div>
+                    <div class="stat-number">87</div>
+                    <div class="stat-label">Avg. Writing Score</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+                <div>
+                    <div class="stat-number">28</div>
+                    <div class="stat-label">Students</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fa-regular fa-clipboard"></i></div>
+                <div>
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Active Assignments</div>
+                </div>
+            </div>
+        </section>
+
+        <div class="dashboard-layout">
+            
+            <div class="panel">
+                <div class="panel-header">
+                    <h2>Recent Documents</h2>
+                    <button class="btn-primary" id="uploadBtn">
+                        <i class="fa-solid fa-plus"></i> Upload Document
+                    </button>
+                </div>
+                
+                <div class="document-list">
+                    <div class="doc-item">
+                        <div class="doc-details">
+                            <h4>Climate Change Essay</h4>
+                            <div class="doc-meta">
+                                <span><i class="fa-regular fa-clock"></i> 2 hours ago</span>
+                                <span>1250 words</span>
+                            </div>
+                        </div>
+                        <i class="fa-regular fa-file-lines doc-icon-right"></i>
+                    </div>
+
+                    <div class="doc-item">
+                        <div class="doc-details">
+                            <h4>History Assignment</h4>
+                            <div class="doc-meta">
+                                <span><i class="fa-regular fa-clock"></i> 1 day ago</span>
+                                <span>890 words</span>
+                            </div>
+                        </div>
+                        <i class="fa-regular fa-file-lines doc-icon-right"></i>
+                    </div>
+
+                    <div class="doc-item">
+                        <div class="doc-details">
+                            <h4>Literature Review</h4>
+                            <div class="doc-meta">
+                                <span><i class="fa-regular fa-clock"></i> 3 days ago</span>
+                                <span>2100 words</span>
+                            </div>
+                        </div>
+                        <i class="fa-regular fa-file-lines doc-icon-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel">
+                <div class="panel-header activity-header">
+                    <h2>Recent Activity</h2>
+                </div>
+                
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <div class="activity-icon-box">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <div class="activity-info">
+                            <h4>Grammar checked</h4>
+                            <p>Climate Change Essay</p>
+                            <span class="activity-time">1 hour ago</span>
+                        </div>
+                    </div>
+
+                    <div class="activity-item">
+                        <div class="activity-icon-box">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <div class="activity-info">
+                            <h4>Grammar checked</h4>
+                            <p>History Assignment</p>
+                            <span class="activity-time">2 days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="dashb teacher.js"></script>
+</body>
+</html>

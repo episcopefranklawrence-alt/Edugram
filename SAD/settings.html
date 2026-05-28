@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduGram - Settings</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+
+  <div class="dashboard-wrapper">
+    
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <div class="brand-header">
+          <div class="logo-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+            </svg>
+          </div>
+          <span class="brand-name">EduGram</span>
+        </div>
+
+        <nav class="navigation">
+          <a href="#" class="nav-item">
+            <span class="nav-icon">📊</span> Dashboard
+          </a>
+          <a href="#" class="nav-item">
+            <span class="nav-icon">✍️</span> Writing Assistant
+          </a>
+          <a href="#" class="nav-item">
+            <span class="nav-icon">📄</span> My Documents
+          </a>
+          <a href="#" class="nav-item">
+            <span class="nav-icon">📅</span> Assignments
+          </a>
+          <a href="#" class="nav-item active">
+            <span class="nav-icon">⚙️</span> Settings
+          </a>
+        </nav>
+      </div>
+
+      <div class="sidebar-footer">
+        <div class="user-avatar">U</div>
+        <div class="user-info">
+          <span class="user-name">User</span>
+          <span class="user-email">aj@gmail.com</span>
+          <span class="badge-student">student</span>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      
+      <header class="content-header">
+        <h1>Settings</h1>
+        <p>Manage your account and preferences</p>
+      </header>
+
+      <div class="settings-grid">
+        
+        <nav class="settings-sub-nav">
+          <a href="#" class="sub-nav-item active">
+            <span class="sub-icon">👤</span> Account
+          </a>
+          <a href="#" class="sub-nav-item">
+            <span class="sub-icon">🎨</span> Appearance
+          </a>
+          <a href="#" class="sub-nav-item">
+            <span class="sub-icon">🔔</span> Notifications
+          </a>
+          <a href="#" class="sub-nav-item">
+            <span class="sub-icon">🛡️</span> Privacy & Security
+          </a>
+        </nav>
+
+        <section class="settings-form-panel">
+          <h2>Account Settings</h2>
+
+          <form class="account-form">
+            <div class="profile-pic-container">
+              <label class="form-label">Profile Picture</label>
+              <div class="profile-pic-row">
+                <div class="form-avatar">U</div>
+                <button type="button" class="btn-change-photo">Change Photo</button>
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label for="fullName" class="form-label">Full Name</label>
+              <input type="text" id="fullName" class="form-control">
+            </div>
+
+            <div class="input-group">
+              <label for="emailAddress" class="form-label">Email</label>
+              <input type="email" id="emailAddress" class="form-control">
+            </div>
+
+            <div class="password-section">
+              <label class="form-label">Change Password</label>
+              
+              <div class="input-group nested-group">
+                <input type="password" placeholder="Current password" class="form-control">
+              </div>
+              <div class="input-group nested-group">
+                <input type="password" placeholder="New password" class="form-control">
+              </div>
+              <div class="input-group nested-group">
+                <input type="password" placeholder="Confirm new password" class="form-control">
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn-save">Save Changes</button>
+            </div>
+          </form>
+
+        </section>
+
+      </div>
+    </main>
+
+  </div>
+
+</body>
+</html>

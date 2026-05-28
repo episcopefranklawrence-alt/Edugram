@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduGram - Writing Assistant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="writting assist.css">
+</head>
+<body>
+
+  <div class="app-container">
+    
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <div class="brand-header">
+          <div class="logo-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+            </svg>
+          </div>
+          <span class="brand-name">EduGram</span>
+        </div>
+
+        <nav class="navigation">
+          <a href="#" class="nav-item">
+            <span class="nav-icon">📊</span> Dashboard
+          </a>
+          <a href="#" class="nav-item active">
+            <span class="nav-icon">✍️</span> Writing Assistant
+          </a>
+          <a href="#" class="nav-item">
+            <span class="nav-icon">📄</span> My Documents
+          </a>
+          <a href="#" class="nav-item">
+            <span class="nav-icon">📅</span> Assignments
+          </a>
+          <a href="#" class="nav-item">
+            <span class="nav-icon">⚙️</span> Settings
+          </a>
+        </nav>
+      </div>
+
+      <div class="sidebar-footer">
+        <div class="user-avatar">U</div>
+        <div class="user-info">
+          <span class="user-name">User</span>
+          <span class="user-email">aj@gmail.com</span>
+          <span class="badge-student">student</span>
+        </div>
+      </div>
+    </aside>
+
+    <div class="workspace-wrapper">
+      
+      <header class="top-bar">
+        <div class="top-bar-left">
+          <button class="btn-secondary">
+            <span class="icon-check">✓</span> Check Grammar
+          </button>
+        </div>
+        <div class="top-bar-right">
+          <span class="save-status">
+            <span class="cloud-icon">☁</span> Saved 3:44:45 AM
+          </span>
+          <button class="btn-primary share-btn">
+            <span class="share-icon">↗</span> Share
+          </button>
+        </div>
+      </header>
+
+      <div class="workspace-body">
+        
+        <main class="editor-container">
+          <div class="editor-placeholder-wrapper">
+            <h2>Start writing or paste your text</h2>
+            <p class="placeholder-subtitle">Get AI-powered suggestions as you write</p>
+            
+            <div class="prompt-suggestions">
+              <span class="prompt-label">Try these prompts:</span>
+              <button class="prompt-chip">"Write an essay about climate change"</button>
+              <button class="prompt-chip">"Paraphrase this paragraph"</button>
+            </div>
+
+            <div class="textarea-mock" contenteditable="true" placeholder="Start writing your essay, message, or assignment..."></div>
+          </div>
+
+          <footer class="editor-footer">
+            <span>0 words</span>
+            <span>0 characters</span>
+          </footer>
+        </main>
+
+        <aside class="analytics-panel">
+          <div class="score-card">
+            <h3>Writing Score</h3>
+            <div class="score-display">
+              <span class="big-score">0</span>
+              <span class="score-total">out of 100</span>
+            </div>
+            
+            <div class="metric-progress-wrapper">
+              <div class="metric-header">
+                <span>Grammar</span>
+                <span>0%</span>
+              </div>
+              <div class="progress-bar-container">
+                <div class="progress-bar-fill" style="width: 0%;"></div>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

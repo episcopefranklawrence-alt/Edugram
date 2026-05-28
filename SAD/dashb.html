@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduGram - Student Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashb.css">
+</head>
+<body>
+
+  <div class="dashboard-wrapper">
+    
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <div class="brand-header">
+          <div class="logo-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+            </svg>
+          </div>
+          <span class="brand-name">EduGram</span>
+        </div>
+
+        <nav class="navigation">
+          <a href="#" class="nav-item active">
+            <span class="nav-icon">📊</span> Dashboard
+          </a>
+          <a href="#" class="nav-item">
+            <span class="nav-icon">✍️</span> Writing Assistant
+          </a>
+          <a href="#" class="nav-item">
+            <span class="nav-icon">📄</span> My Documents
+          </a>
+          <a href="#" class="nav-item">
+            <span class="nav-icon">📅</span> Assignments
+          </a>
+          <a href="#" class="nav-item">
+            <span class="nav-icon">⚙️</span> Settings
+          </a>
+        </nav>
+      </div>
+
+      <div class="sidebar-footer">
+        <div class="user-avatar">U</div>
+        <div class="user-info">
+          <span class="user-name">User</span>
+          <span class="user-email">aj@gmail.com</span>
+          <span class="badge-student">student</span>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="welcome-section">
+        <h1>Welcome back, User!</h1>
+        <p>Here's what's happening with your writing today.</p>
+      </header>
+
+      <section class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon-wrapper blue-icon">📄</div>
+          <div class="stat-number">12</div>
+          <div class="stat-label">Total Documents</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon-wrapper green-icon">📈</div>
+          <div class="stat-number">87</div>
+          <div class="stat-label">Avg. Writing Score</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon-wrapper yellow-icon">📋</div>
+          <div class="stat-number">3</div>
+          <div class="stat-label">Pending Assignments</div>
+        </div>
+      </section>
+
+      <div class="content-split-grid">
+        
+        <section class="content-card">
+          <div class="card-header">
+            <h2>Recent Documents</h2>
+            <button class="btn-primary">+ New Document</button>
+          </div>
+          <div class="document-list">
+            <div class="document-item">
+              <div class="doc-main-info">
+                <h3>Climate Change Essay</h3>
+                <p>🕒 2 hours ago &nbsp;&bull;&nbsp; 1250 words</p>
+              </div>
+              <span class="doc-type-icon">📄</span>
+            </div>
+            <div class="document-item">
+              <div class="doc-main-info">
+                <h3>History Assignment</h3>
+                <p>🕒 1 day ago &nbsp;&bull;&nbsp; 890 words</p>
+              </div>
+              <span class="doc-type-icon">📄</span>
+            </div>
+            <div class="document-item">
+              <div class="doc-main-info">
+                <h3>Literature Review</h3>
+                <p>🕒 3 days ago &nbsp;&bull;&nbsp; 2100 words</p>
+              </div>
+              <span class="doc-type-icon">📄</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-card">
+          <div class="card-header border-bottom">
+            <h2>Recent Activity</h2>
+          </div>
+          <div class="activity-list">
+            <div class="activity-item">
+              <div class="activity-icon-box">✨</div>
+              <div class="activity-details">
+                <h4>Grammar checked</h4>
+                <p class="activity-target">Climate Change Essay</p>
+                <p class="activity-time">1 hour ago</p>
+              </div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-icon-box">✨</div>
+              <div class="activity-details">
+                <h4>Grammar checked</h4>
+                <p class="activity-target">History Assignment</p>
+                <p class="activity-time">2 days ago</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+  </div>
+
+</body>
+</html>

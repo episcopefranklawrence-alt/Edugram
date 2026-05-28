@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduGram - Assignments</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assign teacher.css">
+</head>
+<body>
+
+    <div class="app-container">
+        
+        <aside class="sidebar">
+            <div class="sidebar__top">
+                <div class="brand">
+                    <div class="brand__logo">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <span class="brand__name">EduGram</span>
+                </div>
+
+                <nav class="sidebar__menu">
+                    <a href="#" class="menu-item">
+                        <i class="fa-solid fa-chart-simple"></i> Dashboard
+                    </a>
+                    <a href="#" class="menu-item">
+                        <i class="fa-solid fa-pen-nib"></i> Writing Assistant
+                    </a>
+                    <a href="#" class="menu-item">
+                        <i class="fa-regular fa-file-lines"></i> My Documents
+                    </a>
+                    <a href="#" class="menu-item active">
+                        <i class="fa-regular fa-clipboard"></i> Assignments
+                    </a>
+                    <a href="#" class="menu-item">
+                        <i class="fa-solid fa-gear"></i> Settings
+                    </a>
+                </nav>
+            </div>
+
+            <div class="sidebar__user">
+                <div class="user-avatar">U</div>
+                <div class="user-info">
+                    <span class="user-info__name">User</span>
+                    <span class="user-info__email">aj@gmail.com</span>
+                    <span class="user-info__badge">teacher</span>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            
+            <header class="content-header">
+                <div class="content-header__text">
+                    <h1>Assignments</h1>
+                    <p>Create and manage student assignments</p>
+                </div>
+                <button class="btn-create">
+                    <i class="fa-solid fa-plus"></i> Create Assignment
+                </button>
+            </header>
+
+            <div class="tabs-navigation">
+                <button class="tab-link active">Active</button>
+                <button class="tab-link">Completed</button>
+            </div>
+
+            <section class="assignments-stack">
+                
+                <div class="assignment-entry">
+                    <div class="assignment-entry__core">
+                        <div class="assignment-entry__identity">
+                            <div class="entry-icon-box">
+                                <i class="fa-regular fa-clipboard"></i>
+                            </div>
+                            <div class="entry-text-metadata">
+                                <h3 class="entry-title">Climate Change Essay</h3>
+                                <span class="entry-subtitle">Environmental Science</span>
+                            </div>
+                        </div>
+                        <button class="btn-attach-file">
+                            <i class="fa-solid fa-plus"></i> Attach File
+                        </button>
+                    </div>
+
+                    <div class="assignment-entry__metrics">
+                        <span><i class="fa-regular fa-calendar"></i> Due: Jan 20, 2024</span>
+                        <span><i class="fa-solid fa-users"></i> 18/25 submitted</span>
+                    </div>
+
+                    <div class="attachments-area">
+                        <span class="attachments-area__label">
+                            <i class="fa-solid fa-paperclip"></i> Attached files (1)
+                        </span>
+                        <div class="file-attachment-badge">
+                            <div class="badge-left-details">
+                                <i class="fa-regular fa-file-lines doc-badge-icon"></i>
+                                <span class="badge-file-name">essay_guidelines.pdf</span>
+                                <span class="badge-file-size">180 KB</span>
+                            </div>
+                            <button class="btn-clear-attachment">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="assignment-entry">
+                    <div class="assignment-entry__core">
+                        <div class="assignment-entry__identity">
+                            <div class="entry-icon-box">
+                                <i class="fa-regular fa-clipboard"></i>
+                            </div>
+                            <div class="entry-text-metadata">
+                                <h3 class="entry-title">History Research Paper</h3>
+                                <span class="entry-subtitle">World History</span>
+                            </div>
+                        </div>
+                        <button class="btn-attach-file">
+                            <i class="fa-solid fa-plus"></i> Attach File
+                        </button>
+                    </div>
+
+                    <div class="assignment-entry__metrics">
+                        <span><i class="fa-regular fa-calendar"></i> Due: Jan 25, 2024</span>
+                        <span><i class="fa-solid fa-users"></i> 12/28 submitted</span>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>

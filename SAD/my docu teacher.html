@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduGram - My Documents</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="my docu teacher.css">
+</head>
+<body>
+
+    <div class="dashboard-wrapper">
+        
+        <aside class="sidebar">
+            <div class="sidebar-top">
+                <div class="brand">
+                    <div class="brand-logo">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <span class="brand-name">EduGram</span>
+                </div>
+
+                <nav class="sidebar-menu">
+                    <a href="#" class="menu-item" data-page="dashboard">
+                        <i class="fa-solid fa-chart-simple"></i> Dashboard
+                    </a>
+                    <a href="#" class="menu-item" data-page="writing-assistant">
+                        <i class="fa-solid fa-pen-nib"></i> Writing Assistant
+                    </a>
+                    <a href="#" class="menu-item active" data-page="my-documents">
+                        <i class="fa-regular fa-file-lines"></i> My Documents
+                    </a>
+                    <a href="#" class="menu-item" data-page="assignments">
+                        <i class="fa-regular fa-clipboard"></i> Assignments
+                    </a>
+                    <a href="#" class="menu-item" data-page="settings">
+                        <i class="fa-solid fa-gear"></i> Settings
+                    </a>
+                </nav>
+            </div>
+
+            <div class="sidebar-user">
+                <div class="user-avatar">U</div>
+                <div class="user-info">
+                    <span class="user-name">User</span>
+                    <span class="user-email">aj@gmail.com</span>
+                    <span class="user-badge">teacher</span>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            
+            <header class="content-header">
+                <div class="header-text">
+                    <h1>My Documents</h1>
+                    <p>Manage and organize your writing projects</p>
+                </div>
+                <button class="btn-new-doc">
+                    <i class="fa-solid fa-plus"></i> New Document
+                </button>
+            </header>
+
+            <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" placeholder="Search documents..." class="search-input">
+            </div>
+
+            <section class="documents-grid">
+                
+                <div class="doc-card">
+                    <div class="card-header">
+                        <div class="doc-icon-box">
+                            <i class="fa-regular fa-file-lines"></i>
+                        </div>
+                        <button class="btn-options"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    </div>
+                    <h3 class="doc-title">Climate Change Essay</h3>
+                    <div class="doc-details">
+                        <p><i class="fa-regular fa-clock"></i> Updated 2 hours ago</p>
+                        <p><i class="fa-solid fa-clock-rotate-left"></i> 3 versions</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="word-count">1250 words</span>
+                        <span class="doc-date">Jan 15, 2024</span>
+                    </div>
+                </div>
+
+                <div class="doc-card">
+                    <div class="card-header">
+                        <div class="doc-icon-box">
+                            <i class="fa-regular fa-file-lines"></i>
+                        </div>
+                        <button class="btn-options"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    </div>
+                    <h3 class="doc-title">History Assignment</h3>
+                    <div class="doc-details">
+                        <p><i class="fa-regular fa-clock"></i> Updated 1 day ago</p>
+                        <p><i class="fa-solid fa-clock-rotate-left"></i> 2 versions</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="word-count">890 words</span>
+                        <span class="doc-date">Jan 12, 2024</span>
+                    </div>
+                </div>
+
+                <div class="doc-card">
+                    <div class="card-header">
+                        <div class="doc-icon-box">
+                            <i class="fa-regular fa-file-lines"></i>
+                        </div>
+                        <button class="btn-options"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    </div>
+                    <h3 class="doc-title">Literature Review</h3>
+                    <div class="doc-details">
+                        <p><i class="fa-regular fa-clock"></i> Updated 3 days ago</p>
+                        <p><i class="fa-solid fa-clock-rotate-left"></i> 5 versions</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="word-count">2100 words</span>
+                        <span class="doc-date">Jan 8, 2024</span>
+                    </div>
+                </div>
+
+                <div class="doc-card">
+                    <div class="card-header">
+                        <div class="doc-icon-box">
+                            <i class="fa-regular fa-file-lines"></i>
+                        </div>
+                        <button class="btn-options"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    </div>
+                    <h3 class="doc-title">Science Report</h3>
+                    <div class="doc-details">
+                        <p><i class="fa-regular fa-clock"></i> Updated 1 week ago</p>
+                        <p><i class="fa-solid fa-clock-rotate-left"></i> 4 versions</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="word-count">1500 words</span>
+                        <span class="doc-date">Jan 1, 2024</span>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>

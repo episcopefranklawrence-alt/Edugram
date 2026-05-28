@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduGram - Writing Assistant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="writting assist teacher.css">
+</head>
+<body>
+
+    <div class="dashboard-wrapper">
+        
+        <aside class="sidebar">
+            <div class="sidebar-top">
+                <div class="brand">
+                    <div class="brand-logo">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <span class="brand-name">EduGram</span>
+                </div>
+
+                <nav class="sidebar-menu">
+                    <a href="#" class="menu-item" data-page="dashboard">
+                        <i class="fa-solid fa-table-columns"></i> Dashboard
+                    </a>
+                    <a href="#" class="menu-item active" data-page="writing-assistant">
+                        <i class="fa-solid fa-pen-nib"></i> Writing Assistant
+                    </a>
+                    <a href="#" class="menu-item" data-page="my-documents">
+                        <i class="fa-regular fa-file-lines"></i> My Documents
+                    </a>
+                    <a href="#" class="menu-item" data-page="assignments">
+                        <i class="fa-regular fa-clipboard"></i> Assignments
+                    </a>
+                    <a href="#" class="menu-item" data-page="settings">
+                        <i class="fa-solid fa-gear"></i> Settings
+                    </a>
+                </nav>
+            </div>
+
+            <div class="sidebar-user">
+                <div class="user-avatar">U</div>
+                <div class="user-info">
+                    <span class="user-name">User</span>
+                    <span class="user-email">aj@gmail.com</span>
+                    <span class="user-badge">teacher</span>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            
+            <div class="top-action-bar">
+                <button class="btn-check-grammar">
+                    <i class="fa-regular fa-circle-check"></i> Check Grammar
+                </button>
+                <div class="top-right-actions">
+                    <span class="save-status">
+                        <i class="fa-regular fa-cloud"></i> Saved 4:11:38 AM
+                    </span>
+                    <button class="btn-share">
+                        <i class="fa-solid fa-user-plus"></i> Share
+                    </button>
+                </div>
+            </div>
+
+            <div class="workspace-grid">
+                
+                <div class="editor-panel">
+                    <div class="editor-placeholder-group" id="placeholderGroup">
+                        <h2>Start writing or paste your text</h2>
+                        <p>Get AI-powered suggestions as you write</p>
+                        
+                        <div class="prompt-suggestions">
+                            <span class="prompt-title">Try these prompts:</span>
+                            <button class="prompt-btn" data-text="Write an essay about climate change">"Write an essay about climate change"</button>
+                            <button class="prompt-btn" data-text="Paraphrase this paragraph">"Paraphrase this paragraph"</button>
+                        </div>
+                    </div>
+                    
+                    <textarea id="editorTextarea" placeholder="Start writing your essay, message, or assignment..."></textarea>
+                </div>
+
+                <div class="score-panel">
+                    <div class="score-card">
+                        <h3>Writing Score</h3>
+                        
+                        <div class="score-display">
+                            <span class="big-score" id="scoreNum">0</span>
+                            <span class="score-total">out of 100</span>
+                        </div>
+
+                        <div class="metrics-list">
+                            <div class="metric-item">
+                                <div class="metric-info">
+                                    <span>Grammar</span>
+                                    <span id="grammarPercent">0%</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar-fill" id="grammarFill" style="width: 0%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+    </div>
+
+    <script src="assistant.js"></script>
+</body>
+</html>
